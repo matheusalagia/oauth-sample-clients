@@ -1,0 +1,11 @@
+security:
+    oauth2:
+        client:
+            clientId: app-02
+            clientSecret: senha02
+            accessTokenUri: http://localhost:8080/uaa/oauth/token
+            userAuthorizationUri: http://localhost:8080/uaa/oauth/authorize
+            clientAuthenticationScheme: header
+        resource:
+                userInfoUri: http://localhost:8080/uaa/userinfo
+                preferTokenInfo: false

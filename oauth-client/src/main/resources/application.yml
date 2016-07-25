@@ -1,0 +1,27 @@
+#security:
+#    oauth2:
+#        client:
+#            clientId: bd1c0a783ccdd1c9b9e4
+#            clientSecret: 1a9030fbca47a5b2c28e92f19050bb77824b5ad1
+#            accessTokenUri: https://github.com/login/oauth/access_token
+#            userAuthorizationUri: https://github.com/login/oauth/authorize
+#            clientAuthenticationScheme: form
+#        resource:
+#                userInfoUri: https://api.github.com/user
+#                preferTokenInfo: false
+security:
+    oauth2:
+        client:
+            clientId: app-01
+            clientSecret: senha01
+            accessTokenUri: http://localhost:8080/uaa/oauth/token
+            userAuthorizationUri: http://localhost:8080/uaa/oauth/authorize
+            clientAuthenticationScheme: form
+        resource:
+                userInfoUri: http://localhost:8080/uaa/userinfo
+                preferTokenInfo: false
+#                userInfoUri=http://localhost:8080/uaa/userinfo
+#                accessTokenUri=http://localhost:8080/uaa/oauth/token
+#                userAuthorizationUri=http://localhost:8080/uaa/oauth/authorize
+#                treeUrlPattern=http://localhost:8080/api/{type}
+#                cloudFoundryLogoutUrl=http://localhost:8080/uaa/logout.do
